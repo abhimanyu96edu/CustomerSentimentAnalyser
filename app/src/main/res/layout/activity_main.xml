@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.design.widget.CoordinatorLayout
-    android:id="@+id/coordinator"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient">
 
-    <!-- Dummy view to prevent the default focus on the EditText -->
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:focusable="true"
-        android:focusableInTouchMode="true"/>
+        android:focusableInTouchMode="true" />
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBar"
@@ -44,7 +42,8 @@
                 android:paddingTop="16dp"
                 android:text=" "
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white"
+                tools:ignore="LabelFor" />
 
             <ImageButton
                 android:id="@+id/analyze"
@@ -73,7 +72,7 @@
             android:layout_height="match_parent"
             android:padding="@dimen/spacing_medium"
             android:text="@string/introduction"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <LinearLayout
             android:id="@+id/results"
@@ -88,13 +87,13 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/primaryLight"
                 android:elevation="2dp"
-                tools:ignore="UnusedAttribute"/>
+                tools:ignore="UnusedAttribute" />
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/pager"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -103,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:indeterminate="true"
-            android:visibility="invisible"/>
+            android:visibility="invisible" />
 
     </FrameLayout>
 

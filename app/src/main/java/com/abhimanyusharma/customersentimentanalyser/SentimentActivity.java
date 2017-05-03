@@ -61,9 +61,8 @@ public class SentimentActivity extends Activity {
         }
     }
 
-    /**
-     * Receiving speech input
-     */
+    //Receiving speech input
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

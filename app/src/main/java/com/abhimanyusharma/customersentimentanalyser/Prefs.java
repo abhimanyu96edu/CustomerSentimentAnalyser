@@ -4,11 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 
-/**
- * Created by ANIMATOR ABHI on 16/03/2017.
- */
-
-
 public class Prefs {
 
 
